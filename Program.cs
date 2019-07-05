@@ -10,6 +10,8 @@ namespace idental
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("intern");
+            Console.ReadLine();
         }
     }
 }

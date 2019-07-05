@@ -1,0 +1,7 @@
+C:\Users\nhudi\source\repos\idental\idental\bin\Debug\idental.exe.config
+C:\Users\nhudi\source\repos\idental\idental\bin\Debug\idental.exe
+C:\Users\nhudi\source\repos\idental\idental\bin\Debug\idental.pdb
+C:\Users\nhudi\source\repos\idental\idental\obj\Debug\idental.csprojAssemblyReference.cache
+C:\Users\nhudi\source\repos\idental\idental\obj\Debug\idental.csproj.CoreCompileInputs.cache
+C:\Users\nhudi\source\repos\idental\idental\obj\Debug\idental.exe
+C:\Users\nhudi\source\repos\idental\idental\obj\Debug\idental.pdb
