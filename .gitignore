@@ -3,6 +3,7 @@
 /Debug/
 /bin/
 /obj/
+/obj/Debug/
 
 *.db
 *.opendb

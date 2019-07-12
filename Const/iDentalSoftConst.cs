@@ -13,5 +13,23 @@ namespace idental.Const
         public static string DEFAULT_CUSTOMER_ID = "30003350";
 
         public static string DEFAULT_ZIP_CLASS = "STANDARD";
+
+        public static string USER_PROVIDER_TYPE = "STAFF";
+
+        public static string GENDER_MALE = "MALE";
+        public static string GENDER_FEMALE = "FEMALE";
+        public static string TITLE_MR = "Mr";
+        public static string TITLE_MS = "Ms";
+        internal class Patient
+        {
+            public static string MARITAL_STATUS = "NOT_SPECIFY";
+            public static string MEDICAL_ALERT = "None";
+            public static string TIME_ZONE = "Pacific";
+            public static string RESPONSIBLE_PARTY = "GUARANTOR";
+            public static string COVERAGE = "NONE";
+            public static bool STATUS_ACTIVE = true;
+            public static bool STATUS_INACTICE = false;
+            public static string USER_TYPE = "PATIENT";
+        }
     }
 }

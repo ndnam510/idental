@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using idental.Const;
-namespace idental.iDS
+namespace idental
 {
-    class PracticeIDS
+    class PracticeDto
     {
         public string PracticeName { get; set; }
         public string Address { get; set; }

@@ -16,16 +16,30 @@ namespace idental
     {
         static void Main(string[] args)
         {
+
             ConfigUtils.LoadConfig();
-            Database.OpenDental.CreateConnection();
-            Database.iDenalSoft.CreateConnection();
+            Initial();
 
             idental.Convertion.Practice.Migrate();
-            Console.WriteLine("Practice migrate completed");
+            idental.Convertion.Provider.Migrate();
+            idental.Convertion.Patient.Migrate();
 
-            Database.OpenDental.CloseConnection();
-            Database.iDenalSoft.CloseConnection();
+            Closing();
+
             Console.ReadKey();
+        }
+        private static void Initial()
+        {
+            Logger.CreateLogFile();
+            Database.iDentalSoft.CloneH2();
+            Database.OpenDental.CreateConnection();
+            Database.iDentalSoft.CreateConnection();
+        }
+        private static void Closing()
+        {
+            Database.OpenDental.CloseConnection();
+            Database.iDentalSoft.CloseConnection();
+            Logger.CloseLogFile();
         }
     }
 }

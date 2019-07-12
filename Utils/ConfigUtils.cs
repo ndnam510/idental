@@ -18,9 +18,11 @@ namespace idental.Utils
         }
         internal class iDentalSoft
         {
+            public static string DEFAULT_DATABASE_URL = "";
             public static string DATABASE_URL = "";
             public static string DATABASE_USER = "";
             public static string DATABASE_PASSWORD = "";
+            public static string CONNECTION_TYPE = "";
         }
         public static void LoadConfig()
         {
@@ -30,9 +32,12 @@ namespace idental.Utils
             OpenDental.DATABASE_USER = "root";
             OpenDental.DATABASE_PASSWORD = "123456";
 
-            iDentalSoft.DATABASE_URL = "jdbc:h2:file:D:\\Intern\\iDS\\iDental";
+            iDentalSoft.CONNECTION_TYPE = "jdbc:h2:file:";
             //"jdbc:h2:tcp://localhost/C:\\iDentalSoftData\\data\\db\\iDental"; //server mode
             //local mode = "jdbc:h2:file:C:\\iDentalSoftData\\data\\db\\iDental";
+            iDentalSoft.DEFAULT_DATABASE_URL = "D:\\Intern\\iDS\\iDental";
+            
+            iDentalSoft.DATABASE_URL = iDentalSoft.DEFAULT_DATABASE_URL + DateTime.Now.ToString("_yyyyMMdd-HHmmss");
             iDentalSoft.DATABASE_USER = "SA";
             iDentalSoft.DATABASE_PASSWORD = "";
         }

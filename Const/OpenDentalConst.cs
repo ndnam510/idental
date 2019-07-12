@@ -16,5 +16,14 @@ namespace idental.Const
         public static string PRACTICE_BANK_ACCOUNT = "PracticeBankNumber";
         public static string PRACTICE_CITY = "PracticeCity";
         public static string PRACTICE_ST = "PracticeST";
+
+        public static ushort GENDER_MALE = 0;
+        public static ushort GENDER_FEMALE = 1;
+        internal class Patient
+        {
+            public static ushort STATUS_INACTIVE = 2;
+            public static ushort STATUS_PATIENT = 0;
+            public static ushort STATUS_NONPATIENT = 4;
+        }
     }
 }

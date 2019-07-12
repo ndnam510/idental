@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="h2-1.4.197">
-      <HintPath>lib\h2-1.4.197.dll</HintPath>
+    <Reference Include="h2-1.4.196">
+      <HintPath>lib\h2-1.4.196.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Charsets">
       <HintPath>lib\IKVM.OpenJDK.Charsets.dll</HintPath>
@@ -76,16 +76,32 @@
   <ItemGroup>
     <Compile Include="Const\iDentalSoftConst.cs" />
     <Compile Include="Const\OpenDentalConst.cs" />
-    <Compile Include="DB\PracticeDB.cs" />
+    <Compile Include="Convertion\Patient.cs" />
+    <Compile Include="Convertion\Provider.cs" />
+    <Compile Include="DaoiDS\PatientDao.cs" />
+    <Compile Include="DaoiDS\PracticeDao.cs" />
+    <Compile Include="DaoiDS\UserDao.cs" />
+    <Compile Include="DaoOD\PatientDaoOD.cs" />
+    <Compile Include="DaoOD\PracticeDaoOD.cs" />
+    <Compile Include="DaoiDS\ProviderDao.cs" />
+    <Compile Include="DaoOD\ProviderDaoOD.cs" />
+    <Compile Include="Domain\PatientDomain.cs" />
     <Compile Include="Domain\PracticeDomain.cs" />
+    <Compile Include="Domain\ProviderDomain.cs" />
     <Compile Include="Domain\ZipCodeDomain.cs" />
-    <Compile Include="iDS\PracticeIDS.cs" />
+    <Compile Include="Dto\PatientDto.cs" />
+    <Compile Include="Dto\PracticeDto.cs" />
     <Compile Include="Convertion\Practice.cs" />
-    <Compile Include="iDS\ZipCodeIDS.cs" />
+    <Compile Include="Dto\ProviderDto.cs" />
+    <Compile Include="Dto\UserDto.cs" />
+    <Compile Include="Dto\ZipCodeDto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ConvertionUtils.cs" />
     <Compile Include="Utils\Database.cs" />
     <Compile Include="Utils\ConfigUtils.cs" />
+    <Compile Include="Utils\DatabaseUtils.cs" />
+    <Compile Include="Utils\Logger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
